@@ -16,9 +16,6 @@ public class Doctor extends User{
 	@Enumerated
 	private Specialization specialization;
 
-	public Doctor(){
-		
-	}
 	
 	public Doctor(String username, String password, String passwordConfirm, String name, float salary,
 			Specialization specialization) {
@@ -26,6 +23,11 @@ public class Doctor extends User{
 		this.specialization = specialization;
 	}
 
+
+	public Doctor(){
+		
+	}
+	
 	public Specialization getSpecialization() {
 		return specialization;
 	}

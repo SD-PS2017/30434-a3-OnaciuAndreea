@@ -19,18 +19,6 @@ import javax.persistence.Transient;
 public class User {
 
 	private Long id;
-	
-	@Id
-	@Column
-	@GeneratedValue(strategy = GenerationType.AUTO)
-    public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
 	private String username;
     
 	private String password;
@@ -55,6 +43,19 @@ public class User {
     public User(){
     	this(null);
     }
+    
+	
+	@Id
+	@Column
+	@GeneratedValue(strategy = GenerationType.AUTO)
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
     
 	public String getName() {
 		return name;

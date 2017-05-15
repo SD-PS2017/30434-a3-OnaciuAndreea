@@ -39,15 +39,16 @@ public class Consultation {
 	private String hour;
 	
 	
-	public Consultation(){
-		
-	}
-	
 	public Consultation(Patient patient, Doctor doctor, Date date, String hour) {
 		this.patient = patient;
 		this.doctor = doctor;
 		this.date = date;
 		this.hour = hour;
+	}
+	
+
+	public Consultation(){
+		
 	}
 	
 	public String getHour() {

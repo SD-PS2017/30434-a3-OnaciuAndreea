@@ -23,7 +23,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-       /* http
+        http
                 .authorizeRequests()
                     .antMatchers("/resources/**", "/registration").permitAll()
                     .anyRequest().authenticated()
@@ -33,18 +33,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .permitAll()
                     .and()
                 .logout()
-                    .permitAll();*/
-    	 http
-         // Disable CSRF protection
-         .csrf().disable()
-         // Set default configurations from Spring Security
-         .authorizeRequests()
-           .anyRequest().authenticated()
-           .and()
-         .formLogin()
-           .and()
-         .httpBasic();
-       return;
+                    .permitAll();
+
     }
 
     @Autowired

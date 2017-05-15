@@ -70,8 +70,7 @@ public class AdminController {
             	System.out.println(Specialization.valueOf(type).toString());
             	doctorService.save(d);
             } 
-        	//User user=userService.findByUsername(userForm.getUsername());
-        	//userService.deleteUserById(user.getId());
+
         	model.addAttribute("success","User saved successfully");
         }
         return "welcome";

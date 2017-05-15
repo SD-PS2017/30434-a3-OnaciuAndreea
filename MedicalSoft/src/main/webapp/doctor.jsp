@@ -52,7 +52,7 @@
 				<form:form method="POST"   class="form-signin" >  
 		 <p>Please select patient: </p>
 					
-	     <select name="patient" >
+	     <select name="patient" class="form-control" >
 				<c:forEach var="patient" items="${patients}">
 					<option value="${patient.getCnp()}">${ patient.getName()}</option>							
     					</c:forEach>

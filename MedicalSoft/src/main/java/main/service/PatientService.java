@@ -14,7 +14,7 @@ public class PatientService {
 	@Autowired
 	private PatientRepository patientRepo;
 
-	public void save(Patient patient) {		
+	public void save(Patient patient) {	
 		patientRepo.save(patient);
     }
 	
@@ -33,5 +33,9 @@ public class PatientService {
 	
 	public List<Patient> findAll(){
 		return patientRepo.findAll();
+	}
+	
+	public void deleteByCnp(String cnp){
+		patientRepo.deleteByCnp(cnp);
 	}
 }

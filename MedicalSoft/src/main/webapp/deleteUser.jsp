@@ -71,7 +71,7 @@
 <div class="container">
 
     <form:form method="POST" modelAttribute="deleteUser" class="form-signin">
-        <h2 class="form-signin-heading">Delete employee</h2>
+        <h2 class="form-signin-heading">Delete user</h2>
        <p>Insert username:</p>
         <spring:bind path="username">
             <div class="form-group ${status.error ? 'has-error' : ''}">
